@@ -1,0 +1,11 @@
+Day 1:
+- Created project folder structure.
+- Imported Dry Matter sheet from Excel.
+- Cleaned headers and removed blank column.
+- Created sample group labels.
+- Generated dry matter summary table.
+- Saved dry_matter_summary.csv.
+- Saved dry_matter_group_comparison.png.
+
+Next step:
+- Analyze Crude Protein sheet.
