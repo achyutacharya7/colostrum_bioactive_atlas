@@ -1,4 +1,4 @@
-setwd("F:/Colostrum_bioactive_atlas")
+
 list.files()
 list.files("01_raw_data")
 excel_sheets(file_path)
