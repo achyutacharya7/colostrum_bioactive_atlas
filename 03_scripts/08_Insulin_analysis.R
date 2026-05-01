@@ -45,3 +45,23 @@ insulin_summary <- insulin_clean %>%
   )
 
 View(insulin_summary)
+
+write_csv(insulin_summary, "04_results/tables/insulin_summary.csv")
+
+ggplot(insulin_clean, aes(x = Group, y = Insulin_ng_mL_DM)) +
+  geom_boxplot(width = 0.55, outlier.shape = NA) +
+  geom_point(size = 2.5, alpha = 0.8) +
+  labs(
+    title = "Insulin Concentration (DM corrected)",
+    x = "Group",
+    y = "Insulin (ng/mL of DM)"
+  ) +
+  theme_classic(base_size = 14)
+
+ggsave(
+  "04_results/figures/insulin_plot.png",
+  width = 6,
+  height = 4,
+  dpi = 300
+)
+
